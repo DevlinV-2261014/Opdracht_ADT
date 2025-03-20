@@ -1,0 +1,1 @@
+//basket[personid = "2"]/items/item[quantity >= 4]/productid
