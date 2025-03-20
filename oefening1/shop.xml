@@ -27,7 +27,7 @@
     <persons>
         <person>
             <name>Jan Janssen</name>
-            <id>1</id>
+            <id>2</id>
         </person>
         <person>
             <name>Piet Pietersen</name>
@@ -49,7 +49,6 @@
             <name>Sinaasappel</name>
             <id>103</id>
             <price>1.49</price>
-            <hello>5</hello>
         </product>
         
     </products>

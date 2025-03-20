@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     
     <!-- Root element: shop -->
     <xs:element name="shop">
         <xs:complexType>
             <xs:sequence>
-                <!-- The shop contains baskets, persons, and products -->
                 <xs:element name="baskets" type="bst"/>
                 <xs:element name="persons" type="pst"/>
                 <xs:element name="products" type="prst"/>
             </xs:sequence>
         </xs:complexType>
+        
+        <!-- Key constraint: Each person must have a unique id -->
+        <xs:key name="uniquePersonID">
+            <xs:selector xpath="persons/person"/>
+            <xs:field xpath="id"/>
+        </xs:key>
+        
     </xs:element>
     
     <!-- baskets: contains 0 or more basket elements -->
@@ -20,7 +27,7 @@
         </xs:sequence>
     </xs:complexType>
     
-    <!-- basket (bt): has a personid and a collection of items -->
+    <!-- basket: has a personid and a collection of items -->
     <xs:complexType name="bt">
         <xs:sequence>
             <xs:element name="personid" type="xs:int"/>
@@ -35,7 +42,7 @@
         </xs:sequence>
     </xs:complexType>
     
-    <!-- item (itt): has a productid and a quantity -->
+    <!-- item: has a productid and a quantity -->
     <xs:complexType name="itt">
         <xs:sequence>
             <xs:element name="productid" type="xs:int"/>
@@ -50,7 +57,7 @@
         </xs:sequence>
     </xs:complexType>
     
-    <!-- person (pt): has a name and an id -->
+    <!-- person: has a name and an id -->
     <xs:complexType name="pt">
         <xs:sequence>
             <xs:element name="name" type="xs:string"/>
@@ -65,7 +72,7 @@
         </xs:sequence>
     </xs:complexType>
     
-    <!-- product (prt): has a name, an id, and a price -->
+    <!-- product: has a name, an id, and a price -->
     <xs:complexType name="prt">
         <xs:sequence>
             <xs:element name="name" type="xs:string"/>
