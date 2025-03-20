@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shop>
+    <baskets>
+        <basket>
+            <personid>1</personid>
+            <items>
+                <item>
+                    <productid>101</productid>
+                    <quantity>2</quantity>
+                </item>
+                <item>
+                    <productid>102</productid>
+                    <quantity>1</quantity>
+                </item>
+            </items>
+        </basket>
+        <basket>
+            <personid>2</personid>
+            <items>
+                <item>
+                    <productid>103</productid>
+                    <quantity>5</quantity>
+                </item>
+            </items>
+        </basket>
+    </baskets>
+    <persons>
+        <person>
+            <name>Jan Janssen</name>
+            <id>1</id>
+        </person>
+        <person>
+            <name>Piet Pietersen</name>
+            <id>2</id>
+        </person>
+    </persons>
+    <products>
+        <product>
+            <name>Appel</name>
+            <id>101</id>
+            <price>0.99</price>
+        </product>
+        <product>
+            <name>Banaan</name>
+            <id>102</id>
+            <price>1.29</price>
+        </product>
+        <product>
+            <name>Sinaasappel</name>
+            <id>103</id>
+            <price>1.49</price>
+        </product>
+        
+    </products>
+</shop>
