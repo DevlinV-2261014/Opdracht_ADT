@@ -1,3 +1,5 @@
+//b[c[n=3] and d[n=4] and c << d]/n
+
 <r>
     <n>1</n>
     <b>
