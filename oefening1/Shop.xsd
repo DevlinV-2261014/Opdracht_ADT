@@ -18,6 +18,12 @@
             <xs:field xpath="id"/>
         </xs:key>
         
+        <!-- Key constraint: Each person must have a unique id -->
+        <xs:key name="uniqueProductID">
+            <xs:selector xpath="products/product"/>
+            <xs:field xpath="id"/>
+        </xs:key>
+        
     </xs:element>
     
     <!-- baskets: contains 0 or more basket elements -->

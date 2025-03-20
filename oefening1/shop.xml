@@ -27,7 +27,7 @@
     <persons>
         <person>
             <name>Jan Janssen</name>
-            <id>2</id>
+            <id>1</id>
         </person>
         <person>
             <name>Piet Pietersen</name>
@@ -37,7 +37,7 @@
     <products>
         <product>
             <name>Appel</name>
-            <id>101</id>
+            <id>102</id>
             <price>0.99</price>
         </product>
         <product>
