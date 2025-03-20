@@ -30,6 +30,12 @@
             <xs:field xpath="productid"/>
         </xs:keyref>
         
+        <!-- Key reference: Each basket's productid must reference an existing product id -->
+        <xs:keyref name="validPersonID" refer="uniquePersonID">
+            <xs:selector xpath="baskets/basket"/>
+            <xs:field xpath="personid"/>
+        </xs:keyref>
+        
     </xs:element>
     
     <!-- baskets: contains 0 or more basket elements -->
