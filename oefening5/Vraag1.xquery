@@ -7,4 +7,11 @@ declare function local:resolve($id as xs:string) as xs:string? {
     else if ($product) then $product
     else ()
 };
-local:resolve("101")
+
+string-join((
+  local:resolve("1"),
+  local:resolve("2"),
+  local:resolve("101"),
+  local:resolve("102"),
+  local:resolve("103")
+), codepoints-to-string(10))
