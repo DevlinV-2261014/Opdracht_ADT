@@ -18,7 +18,7 @@
             <personid>2</personid>
             <items>
                 <item>
-                    <productid>103</productid>
+                    <productid>104</productid>
                     <quantity>3</quantity>
                 </item>
             </items>
@@ -37,7 +37,7 @@
     <products>
         <product>
             <name>Appel</name>
-            <id>102</id>
+            <id>101</id>
             <price>0.99</price>
         </product>
         <product>

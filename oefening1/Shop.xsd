@@ -18,11 +18,17 @@
             <xs:field xpath="id"/>
         </xs:key>
         
-        <!-- Key constraint: Each person must have a unique id -->
+        <!-- Key constraint: Each product must have a unique id -->
         <xs:key name="uniqueProductID">
             <xs:selector xpath="products/product"/>
             <xs:field xpath="id"/>
         </xs:key>
+        
+        <!-- Key reference: Each basket's productid must reference an existing product id -->
+        <xs:keyref name="validProductID" refer="uniqueProductID">
+            <xs:selector xpath="baskets/basket/items/item"/>
+            <xs:field xpath="productid"/>
+        </xs:keyref>
         
     </xs:element>
     
