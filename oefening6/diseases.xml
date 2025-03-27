@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<diseases>
+	<disease>
+		<name>migraine</name>
+		<symptom>hoofdpijn</symptom>
+	</disease>
+	<disease>
+		<name>migraine</name>
+		<symptom>hogeBloeddruk</symptom>
+	</disease>
+	<disease>
+		<name>griep</name>
+		<symptom>koorts</symptom>
+	</disease>	
+	<disease>
+		<name>klierkoorts</name>
+		<symptom>koorts</symptom>
+	</disease>
+	<disease>
+		<name>klierkoorts</name>
+		<symptom>ontsteking</symptom>
+	</disease>
+	<disease>
+		<name>plaag</name>
+		<symptom>koorts</symptom>
+	</disease>
+	<disease>
+		<name>plaag</name>
+		<symptom>ontsteking</symptom>
+	</disease>
+	<disease>
+		<name>plaag</name>
+		<symptom>zweren</symptom>
+	</disease>
+</diseases>
