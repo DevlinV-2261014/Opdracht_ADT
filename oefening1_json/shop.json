@@ -1,0 +1,54 @@
+{
+    "$schema": "file:/C:/Users/devli/Documents/GitHub/Opdracht_ADT/oefening1_json/shop_schema.json",
+  "baskets": [
+    {
+      "personid": 1,
+      "items": [
+        {
+          "productid": 101,
+          "quantity": 2
+        },
+        {
+          "productid": 102,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "personid": 2,
+      "items": [
+        {
+          "productid": 103,
+          "quantity": 5
+        }
+      ]
+    }
+  ],
+  "persons": [
+    {
+      "name": "Jan Janssen",
+      "id": 1
+    },
+    {
+      "name": "Piet Pietersen",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "name": "Appel",
+      "id": 101,
+      "price": 0.99
+    },
+    {
+      "name": "Banaan",
+      "id": 102,
+      "price": 1.29
+    },
+    {
+      "name": "Sinaasappel",
+      "id": 103,
+      "price": 1.49
+    }
+  ]
+}
