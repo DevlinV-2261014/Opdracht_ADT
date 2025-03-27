@@ -1,21 +1,31 @@
-<r>
+<r xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="root.xsd">
     <n>1</n>
-    <a>
-        <n>1</n>
-        <c>
-            <n>4</n>
-        </c>
-    </a>
     <b>
-        <n>4</n>
-        <a>
-            <n>2</n>
-        </a>
-        <d>
+        <n>5</n>
+        <c>
             <n>3</n>
+        </c>
+        <d>
+            <n>4</n>
         </d>
     </b>
-    <a>
+    <b>
         <n>6</n>
-    </a>
+        <d>
+            <n>4</n>
+        </d>
+        <c>
+            <n>3</n>
+        </c> <!-- Wrong order, this <b> is ignored -->
+    </b>
+    <b>
+        <n>7</n>
+        <c>
+            <n>3</n>
+        </c>
+        <d>
+            <n>4</n>
+        </d>
+    </b>
 </r>
