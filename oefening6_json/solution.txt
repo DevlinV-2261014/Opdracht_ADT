@@ -1,0 +1,11 @@
+for $p in distinct-values($patients[].name),
+    $d in distinct-values($diseases[].name)
+let $patientSymptoms := $patients[.name = $p].symptom
+let $diseaseSymptoms := $diseases[.name = $d].symptom
+where every $sym in $diseaseSymptoms satisfies $sym = $patientSymptoms
+return {
+  "match": {
+    "patient": $p,
+    "disease": $d
+  }
+}

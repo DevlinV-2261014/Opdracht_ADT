@@ -1,0 +1,21 @@
+{
+    "diseases": [
+      {
+        "name": "migraine",
+        "symptom": ["hoofdpijn", "hogeBloeddruk"]
+      },
+      {
+        "name": "griep",
+        "symptom": ["koorts"]
+      },
+      {
+        "name": "klierkoorts",
+        "symptom": ["koorts", "ontsteking"]
+      },
+      {
+        "name": "plaag",
+        "symptom": ["koorts", "ontsteking", "zweren"]
+      }
+    ]
+  }
+  

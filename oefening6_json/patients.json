@@ -1,0 +1,21 @@
+{
+    "patients": [
+      {
+        "name": "patient1",
+        "symptom": ["hoofdpijn", "hogeBloeddruk", "koorts", "ontsteking", "duizelig"]
+      },
+      {
+        "name": "patient2",
+        "symptom": ["zweren", "hoofdpijn"]
+      },
+      {
+        "name": "patient3",
+        "symptom": ["zweren", "koorts", "ontsteking"]
+      },
+      {
+        "name": "patient4",
+        "symptom": ["ontsteking", "koorts"]
+      }
+    ]
+  }
+  

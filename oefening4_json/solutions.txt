@@ -1,0 +1,99 @@
+-----
+  a  
+-----
+
+for $x in $doc//* 
+let $n1 := $x.n 
+for $y in $x//* 
+let $n2 := $y.n 
+return {
+  "pair": {
+    "x": $n1,
+    "y": $n2
+  }
+}
+
+-----
+  b  
+-----
+
+{
+  "results": [
+    for $a in $doc//* where exists($a.a) 
+    let $n := $a.a.n
+    order by $n descending
+    return { "n": $n }
+  ]
+}
+
+-----
+  c  
+-----
+
+{
+  "results": [
+    for $n in distinct-values($doc//*:*.n)
+    let $count := count($doc//*:*.n[. = $n])
+    return {
+      "number": {
+        "value": $n,
+        "count": $count
+      }
+    }
+  ]
+}
+
+-----
+  d  
+-----
+
+declare function local:depth($node) {
+  if (exists($node.children))
+  then 1 + max(
+         for $child in $node.children
+         let $v := values($child)
+         return local:depth($v)
+       )
+  else 1
+};
+
+local:depth($doc.r)
+
+-----
+  e  
+-----
+
+declare function local:sum-descendant-n($node) {
+  sum(
+    for $desc in $node//* return $desc.n
+  )
+};
+
+declare function local:transform($node) {
+  if (exists($node.a))
+  then {
+    "a": {
+      "n": $node.a.n,
+      "s": local:sum-descendant-n($node.a),
+      "children": [
+        for $child in $node.a.children
+        let $label := keys($child)[1]
+        let $value := $child($label)
+        return { $label: local:transform($value) }
+      ]
+    }
+  }
+  else if (exists($node.children))
+  then {
+    "n": $node.n,
+    "children": [
+      for $child in $node.children
+      let $label := keys($child)[1]
+      let $value := $child($label)
+      return { $label: local:transform($value) }
+    ]
+  }
+  else $node
+};
+
+local:transform($doc.r)

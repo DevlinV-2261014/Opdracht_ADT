@@ -1,0 +1,30 @@
+-----
+  1
+-----
+
+declare function local:resolve($id, $data) {
+  let $person := head(for $p in $data.persons where $p.id = $id return $p.name)
+  return
+    if (exists($person)) then $person
+    else head(for $prod in $data.products where $prod.id = $id return $prod.name)
+};
+
+-----
+  2
+-----
+
+{
+  "baskets": [
+    for $basket in $data.baskets
+    return {
+      "person": local:resolve($basket.personid, $data),
+      "items": [
+        for $item in $basket.items
+        return {
+          "product": local:resolve($item.productid, $data),
+          "quantity": $item.quantity
+        }
+      ]
+    }
+  ]
+}
