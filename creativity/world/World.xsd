@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <!-- Root element: world with total count and records -->
+    <xs:element name="world">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="n" type="xs:int"/>
+                <xs:element name="choice">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="record" type="RecordType" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <!-- Definition of a single geographic record -->
+    <xs:complexType name="RecordType">
+        <xs:sequence>
+            <xs:element name="n" type="xs:int"/>
+            <xs:element name="country" type="xs:string"/>
+            <xs:element name="region" type="xs:string"/>
+            <xs:element name="city" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+</xs:schema>
