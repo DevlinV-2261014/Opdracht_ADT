@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://voorbeeld.nl/animals"
+    xmlns="http://voorbeeld.nl/animals"
+    elementFormDefault="qualified">
+    
+    <!-- Root element -->
+    <xs:element name="AnimalClassification">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Vertebrates" type="VertebrateType" minOccurs="0"/>
+                <xs:element name="Invertebrates" type="InvertebrateType" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <!-- Type voor gewervelde dieren -->
+    <xs:complexType name="VertebrateType">
+        <xs:sequence>
+            <xs:element name="Class" type="ClassType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- Type voor ongewervelde dieren -->
+    <xs:complexType name="InvertebrateType">
+        <xs:sequence>
+            <xs:element name="Phylum" type="PhylumType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- Algemene klasse-definitie -->
+    <xs:complexType name="ClassType">
+        <xs:sequence>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="Characteristics" type="xs:string" minOccurs="0"/>
+            <xs:element name="Orders" type="OrderListType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- Phylum voor ongewervelden -->
+    <xs:complexType name="PhylumType">
+        <xs:sequence>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="Characteristics" type="xs:string" minOccurs="0"/>
+            <xs:element name="Classes" type="ClassListType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- Lijst van orders binnen een klasse -->
+    <xs:complexType name="OrderListType">
+        <xs:sequence>
+            <xs:element name="Order" type="OrderType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- Lijst van klassen binnen een phylum -->
+    <xs:complexType name="ClassListType">
+        <xs:sequence>
+            <xs:element name="Class" type="ClassType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- Order-definitie -->
+    <xs:complexType name="OrderType">
+        <xs:sequence>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="Diet" type="xs:string" minOccurs="0"/> <!-- bijv. carnivoor, herbivoor -->
+            <xs:element name="Examples" type="xs:string" minOccurs="0"/> <!-- voorbeelddieren -->
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+    
+</xs:schema>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnimalClassification xmlns="http://voorbeeld.nl/animals"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://voorbeeld.nl/animals animals_classification.xsd">
+    
+    <!-- Gewervelde dieren -->
+    <Vertebrates>
+        <!-- Klasse Amphibia -->
+        <Class>
+            <Name>Amphibia</Name>
+            <Characteristics>Leven zowel in water als op het land</Characteristics>
+            <Orders>
+                <Order id="Lissamphibia">
+                    <Name>Anura (Kikkers en padden)</Name>
+                    <Diet>Carnivoor</Diet>
+                    <Examples>Groene kikker, Gewone pad</Examples>
+                </Order>
+                <Order id="Caudata">
+                    <Name>Caudata (Salamanders)</Name>
+                    <Diet>Omnivoor</Diet>
+                    <Examples>Salamander, Axolotl</Examples>
+                </Order>
+            </Orders>
+        </Class>
+        
+        <!-- Klasse Mammalia -->
+        <Class>
+            <Name>Mammalia</Name>
+            <Characteristics>Warmbloedig, haar- en melkklieren</Characteristics>
+            <Orders>
+                <Order id="Carnivora">
+                    <Name>Carnivora</Name>
+                    <Diet>Carnivoor</Diet>
+                    <Examples>Leeuw, Wolf, Huiskat</Examples>
+                </Order>
+                <Order id="Primates">
+                    <Name>Primates</Name>
+                    <Diet>Omnivoor</Diet>
+                    <Examples>Mens, Chimpansee, Lemur</Examples>
+                </Order>
+            </Orders>
+        </Class>
+    </Vertebrates>
+    
+    <!-- Ongewervelde dieren -->
+    <Invertebrates>
+        <!-- Phylum Arthropoda -->
+        <Phylum>
+            <Name>Arthropoda</Name>
+            <Characteristics>Gecastreerde segmenten, exoskelet</Characteristics>
+            <Classes>
+                <Class>
+                    <Name>Insecta</Name>
+                    <Characteristics>Zes poten, antennes</Characteristics>
+                    <Orders>
+                        <Order id="Coleoptera">
+                            <Name>Kevers</Name>
+                            <Diet>Herbivoor</Diet>
+                            <Examples>Hertenkopkever, Lieveheersbeestje</Examples>
+                        </Order>
+                        <Order id="Lepidoptera">
+                            <Name>Vlinders en motten</Name>
+                            <Diet>Herbivoor</Diet>
+                            <Examples>Koninginnepage, Nachtvlinder</Examples>
+                        </Order>
+                    </Orders>
+                </Class>
+                <Class>
+                    <Name>Arachnida</Name>
+                    <Characteristics>Acht poten, geen antennes</Characteristics>
+                    <Orders>
+                        <Order id="Araneae">
+                            <Name>Spinnen</Name>
+                            <Diet>Carnivoor</Diet>
+                            <Examples>Wolkspin, Kruisspin</Examples>
+                        </Order>
+                    </Orders>
+                </Class>
+            </Classes>
+        </Phylum>
+        
+        <!-- Phylum Mollusca -->
+        <Phylum>
+            <Name>Mollusca</Name>
+            <Characteristics>Zachte lichaam, vaak pantser</Characteristics>
+            <Classes>
+                <Class>
+                    <Name>Gastropoda</Name>
+                    <Characteristics>Eenvoetig</Characteristics>
+                    <Orders>
+                        <Order id="Stylommatophora">
+                            <Name>Schildpadden en slakken</Name>
+                            <Diet>Herbivoor</Diet>
+                            <Examples>Tuinslak, Slak</Examples>
+                        </Order>
+                    </Orders>
+                </Class>
+            </Classes>
+        </Phylum>
+    </Invertebrates>
+    
+</AnimalClassification>
