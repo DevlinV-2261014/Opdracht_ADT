@@ -1,0 +1,102 @@
+{
+  "shop": {
+    "baskets": [
+      {
+        "personid": 1,
+        "items": [
+          { "productid": 101, "quantity": 1 },
+          { "productid": 104, "quantity": 2 },
+          { "productid": 108, "quantity": 1 }
+        ]
+      },
+      {
+        "personid": 2,
+        "items": [
+          { "productid": 102, "quantity": 3 },
+          { "productid": 103, "quantity": 1 },
+          { "productid": 104, "quantity": 1 },
+          { "productid": 110, "quantity": 2 }
+        ]
+      },
+      {
+        "personid": 3,
+        "items": [
+          { "productid": 103, "quantity": 5 },
+          { "productid": 107, "quantity": 1 }
+        ]
+      },
+      {
+        "personid": 4,
+        "items": [
+          { "productid": 105, "quantity": 2 },
+          { "productid": 109, "quantity": 1 },
+          { "productid": 101, "quantity": 1 }
+        ]
+      },
+      {
+        "personid": 5,
+        "items": [
+          { "productid": 106, "quantity": 4 },
+          { "productid": 112, "quantity": 1 },
+          { "productid": 102, "quantity": 2 }
+        ]
+      },
+      {
+        "personid": 6,
+        "items": [
+          { "productid": 108, "quantity": 3 },
+          { "productid": 111, "quantity": 1 }
+        ]
+      },
+      {
+        "personid": 7,
+        "items": [
+          { "productid": 109, "quantity": 2 },
+          { "productid": 110, "quantity": 3 },
+          { "productid": 103, "quantity": 1 }
+        ]
+      },
+      {
+        "personid": 8,
+        "items": [
+          { "productid": 104, "quantity": 2 },
+          { "productid": 105, "quantity": 1 },
+          { "productid": 107, "quantity": 2 },
+          { "productid": 112, "quantity": 1 }
+        ]
+      },
+      {
+        "personid": 9,
+        "items": [
+          { "productid": 111, "quantity": 5 },
+          { "productid": 106, "quantity": 2 }
+        ]
+      }
+    ],
+    "persons": [
+      { "id": 1, "name": "Aria de Avonturier" },
+      { "id": 2, "name": "Borislav de Bijzondere" },
+      { "id": 3, "name": "Celine de Creatieve" },
+      { "id": 4, "name": "Dante de Dapper" },
+      { "id": 5, "name": "Elowen de Elixer" },
+      { "id": 6, "name": "Felix de Felle" },
+      { "id": 7, "name": "Giselle de Glinster" },
+      { "id": 8, "name": "Hector de Heldhaftige" },
+      { "id": 9, "name": "Isolde de Inspirerende" }
+    ],
+    "products": [
+      { "id": 101, "name": "Draakenei", "price": 299.99 },
+      { "id": 102, "name": "Eenhoornhoorn", "price": 149.50 },
+      { "id": 103, "name": "Onzichtbaarheidsdrank", "price": 75.00 },
+      { "id": 104, "name": "Alchemistenboek", "price": 49.95 },
+      { "id": 105, "name": "Pegasuspennen", "price": 19.99 },
+      { "id": 106, "name": "Sneeuwvlokzwaard", "price": 189.00 },
+      { "id": 107, "name": "Drakenvleugelveer", "price": 9.75 },
+      { "id": 108, "name": "Zeewierelixer", "price": 12.40 },
+      { "id": 109, "name": "Zilveren Amulet", "price": 64.60 },
+      { "id": 110, "name": "Gouden Toverstaf", "price": 249.20 },
+      { "id": 111, "name": "Spookachtige Spiegel", "price": 89.90 },
+      { "id": 112, "name": "Muzikale Maansteen", "price": 34.30 }
+    ]
+  }
+}
