@@ -1,0 +1,1 @@
+/world/choice/record[country = 'United States']/city
