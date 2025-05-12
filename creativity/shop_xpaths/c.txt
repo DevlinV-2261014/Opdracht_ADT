@@ -1,0 +1,1 @@
+/shop/products/product [ id = /shop/baskets/basket[personid = 5] /items/item[quantity >= 4]            /productid ] /(id|name|price) 
