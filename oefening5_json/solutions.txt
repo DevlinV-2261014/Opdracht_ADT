@@ -3,10 +3,15 @@
 -----
 
 declare function local:resolve($id, $data) {
-  let $person := head(for $p in $data.persons where $p.id = $id return $p.name)
+  let $person := head(for $p in $data.persons[] where $p.id = $id return $p.name)
   return
     if (exists($person)) then $person
-    else head(for $prod in $data.products where $prod.id = $id return $prod.name)
+    else (
+      let $product := head(for $prod in $data.products[] where $prod.id = $id return $prod.name)
+      return
+        if (exists($product)) then $product
+        else "The person or product with the specified id was not found"
+    )
 };
 
 -----
@@ -15,13 +20,13 @@ declare function local:resolve($id, $data) {
 
 {
   "baskets": [
-    for $basket in $data.baskets
+    for $basket in $shopData.baskets[]
     return {
-      "person": local:resolve($basket.personid, $data),
+      "person": local:resolve($basket.personid, $shopData),
       "items": [
-        for $item in $basket.items
+        for $item in $basket.items[]
         return {
-          "product": local:resolve($item.productid, $data),
+          "product": local:resolve($item.productid, $shopData),
           "quantity": $item.quantity
         }
       ]

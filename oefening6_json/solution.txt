@@ -1,11 +1,29 @@
-for $p in distinct-values($patients[].name),
-    $d in distinct-values($diseases[].name)
-let $patientSymptoms := $patients[.name = $p].symptom
-let $diseaseSymptoms := $diseases[.name = $d].symptom
-where every $sym in $diseaseSymptoms satisfies $sym = $patientSymptoms
+%%jsoniq
+
+let $diseases := [
+  { "name": "migraine", "symptom": ["hoofdpijn", "hogeBloeddruk"] },
+  { "name": "griep", "symptom": ["koorts"] },
+  { "name": "klierkoorts", "symptom": ["koorts", "ontsteking"] },
+  { "name": "plaag", "symptom": ["koorts", "ontsteking", "zweren"] }
+]
+
+let $patients := [
+  { "name": "patient1", "symptom": ["hoofdpijn", "hogeBloeddruk", "koorts", "ontsteking", "duizelig"] },
+  { "name": "patient2", "symptom": ["zweren", "hoofdpijn"] },
+  { "name": "patient3", "symptom": ["zweren", "koorts", "ontsteking"] },
+  { "name": "patient4", "symptom": ["ontsteking", "koorts"] }
+]
+
+for $patient in $patients[]
+let $matchingDiseases :=
+  for $disease in $diseases[]
+  where some $s in $disease.symptom[] satisfies $s = $patient.symptom[]
+  return $disease.name
+
 return {
   "match": {
-    "patient": $p,
-    "disease": $d
+    "patient": $patient.name,
+    "diseases": $matchingDiseases
   }
 }
+
