@@ -1,0 +1,7 @@
+/shop/persons/person[
+    id = /shop/baskets/basket[
+        items/item/productid = 104
+    ][
+        items/item/productid = 105
+    ]/personid
+]/name
