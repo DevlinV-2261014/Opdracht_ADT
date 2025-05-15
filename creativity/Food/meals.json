@@ -1,0 +1,779 @@
+{
+  "Breakfast": {
+    "Egg": [
+      {
+        "name": "Spinach Feta Scramble",
+        "ingredients": [
+          "2 eggs",
+          "1/2 cup spinach",
+          "30g feta cheese",
+          "1 tsp olive oil",
+          "Salt, pepper"
+        ],
+        "steps": [
+          "Heat oil, wilt spinach.",
+          "Add eggs and feta, scramble gently, season."
+        ],
+        "prep_time": "4 min",
+        "cook_time": "5 min",
+        "servings": 1,
+        "tags": ["vegetarian", "high-protein"],
+        "calories": 270
+      },
+      {
+        "name": "Egg Muffins",
+        "ingredients": [
+          "3 eggs",
+          "1/4 cup diced tomato",
+          "2 tbsp chopped onion",
+          "30g grated cheese",
+          "Salt, pepper"
+        ],
+        "steps": [
+          "Beat eggs, mix in veggies and cheese.",
+          "Pour in muffin tray, bake 15 min at 180°C."
+        ],
+        "prep_time": "6 min",
+        "cook_time": "15 min",
+        "servings": 2,
+        "tags": ["meal prep", "vegetarian"],
+        "calories": 320
+      },
+      {
+        "name": "Smoked Salmon Bagel",
+        "ingredients": [
+          "1 whole grain bagel",
+          "2 tbsp cream cheese",
+          "50g smoked salmon",
+          "Fresh dill"
+        ],
+        "steps": [
+          "Toast bagel.",
+          "Spread cream cheese, top with salmon and dill."
+        ],
+        "prep_time": "5 min",
+        "cook_time": "2 min",
+        "servings": 1,
+        "tags": ["pescatarian"],
+        "calories": 380
+      },
+      {
+        "name": "Shakshuka",
+        "ingredients": [
+          "2 eggs",
+          "1/2 cup diced tomatoes",
+          "1/4 cup chopped bell pepper",
+          "1/4 onion, diced",
+          "1 tsp olive oil",
+          "Cumin, paprika"
+        ],
+        "steps": [
+          "Cook onion and pepper in oil.",
+          "Add tomato & spices, simmer.",
+          "Make wells, crack in eggs, cover until set."
+        ],
+        "prep_time": "7 min",
+        "cook_time": "10 min",
+        "servings": 1,
+        "tags": ["Mediterranean", "vegetarian"],
+        "calories": 210
+      },
+      {
+        "name": "Egg White Burrito",
+        "ingredients": [
+          "3 egg whites",
+          "1 small whole wheat tortilla",
+          "2 tbsp salsa",
+          "1/4 cup spinach"
+        ],
+        "steps": [
+          "Cook egg whites, add spinach.",
+          "Wrap in tortilla with salsa."
+        ],
+        "prep_time": "5 min",
+        "cook_time": "4 min",
+        "servings": 1,
+        "tags": ["low-fat", "high-protein"],
+        "calories": 190
+      },
+      {
+        "name": "Spanish Tortilla",
+        "ingredients": [
+          "2 eggs",
+          "1 small potato",
+          "1/4 onion",
+          "1 tbsp olive oil",
+          "Salt, pepper"
+        ],
+        "steps": [
+          "Slice and fry potato & onion in oil.",
+          "Beat eggs, pour over, cook until set."
+        ],
+        "prep_time": "6 min",
+        "cook_time": "12 min",
+        "servings": 1,
+        "tags": ["vegetarian", "classic"],
+        "calories": 265
+      },
+      {
+        "name": "Breakfast Quesadilla",
+        "ingredients": [
+          "2 eggs",
+          "1 small tortilla",
+          "20g grated cheese",
+          "2 tbsp black beans"
+        ],
+        "steps": [
+          "Scramble eggs with beans.",
+          "Spread on tortilla with cheese, fold, grill 2 min."
+        ],
+        "prep_time": "5 min",
+        "cook_time": "5 min",
+        "servings": 1,
+        "tags": ["Tex-Mex", "high-protein"],
+        "calories": 295
+      }
+    ],
+    "Veggie": [
+      {
+        "name": "Peanut Butter Banana Toast",
+        "ingredients": [
+          "1 slice whole grain bread",
+          "1 tbsp peanut butter",
+          "1/2 banana"
+        ],
+        "steps": [
+          "Toast bread.",
+          "Spread peanut butter, add banana slices."
+        ],
+        "prep_time": "3 min",
+        "cook_time": "2 min",
+        "servings": 1,
+        "tags": ["vegan", "dairy-free"],
+        "calories": 290
+      },
+      {
+        "name": "Mushroom Spinach Breakfast Bowl",
+        "ingredients": [
+          "1/2 cup cooked quinoa",
+          "1/2 cup sautéed mushrooms",
+          "1/2 cup spinach",
+          "1 tbsp olive oil"
+        ],
+        "steps": [
+          "Cook mushrooms and spinach in oil.",
+          "Serve over warm quinoa."
+        ],
+        "prep_time": "6 min",
+        "cook_time": "7 min",
+        "servings": 1,
+        "tags": ["vegan", "gluten-free"],
+        "calories": 320
+      },
+      {
+        "name": "Chia Pudding",
+        "ingredients": [
+          "3 tbsp chia seeds",
+          "1 cup almond milk",
+          "1 tsp maple syrup",
+          "Berries"
+        ],
+        "steps": [
+          "Mix chia seeds with milk and syrup.",
+          "Refrigerate overnight, top with berries."
+        ],
+        "prep_time": "3 min",
+        "cook_time": "0 min",
+        "servings": 1,
+        "tags": ["vegan", "meal prep"],
+        "calories": 215
+      },
+      {
+        "name": "Apple Cinnamon Overnight Oats",
+        "ingredients": [
+          "1/2 cup oats",
+          "1/2 cup soy milk",
+          "1/2 apple, diced",
+          "1/2 tsp cinnamon"
+        ],
+        "steps": [
+          "Combine all, refrigerate overnight."
+        ],
+        "prep_time": "4 min",
+        "cook_time": "0 min",
+        "servings": 1,
+        "tags": ["vegan", "fiber-rich"],
+        "calories": 285
+      },
+      {
+        "name": "Protein Power Smoothie",
+        "ingredients": [
+          "1 scoop vegan protein powder",
+          "1 banana",
+          "1 cup soy milk",
+          "1 tbsp flaxseed"
+        ],
+        "steps": [
+          "Blend all ingredients until smooth."
+        ],
+        "prep_time": "3 min",
+        "cook_time": "0 min",
+        "servings": 1,
+        "tags": ["vegan", "high-protein"],
+        "calories": 265
+      },
+      {
+        "name": "Tofu Scramble",
+        "ingredients": [
+          "100g firm tofu",
+          "1/4 cup diced bell peppers",
+          "1/4 tsp turmeric",
+          "1 tbsp olive oil"
+        ],
+        "steps": [
+          "Crumble tofu, sauté with veggies and turmeric."
+        ],
+        "prep_time": "5 min",
+        "cook_time": "6 min",
+        "servings": 1,
+        "tags": ["vegan", "high-protein"],
+        "calories": 210
+      },
+      {
+        "name": "Breakfast Sweet Potato Hash",
+        "ingredients": [
+          "1/2 sweet potato, cubed",
+          "1/4 cup black beans",
+          "1/4 cup corn",
+          "1 tbsp olive oil"
+        ],
+        "steps": [
+          "Sauté sweet potato until soft.",
+          "Add beans and corn, cook 2 min more."
+        ],
+        "prep_time": "5 min",
+        "cook_time": "8 min",
+        "servings": 1,
+        "tags": ["vegan", "gluten-free"],
+        "calories": 230
+      },
+      {
+        "name": "Cottage Cheese Bowl",
+        "ingredients": [
+          "100g cottage cheese",
+          "1/2 cup pineapple chunks",
+          "1 tbsp sunflower seeds"
+        ],
+        "steps": [
+          "Top cottage cheese with pineapple and seeds."
+        ],
+        "prep_time": "2 min",
+        "cook_time": "0 min",
+        "servings": 1,
+        "tags": ["vegetarian", "high-protein"],
+        "calories": 180
+      }
+    ]
+  },
+  "Lunch": {
+    "Fish": [
+      {
+        "name": "Tuna Pasta Salad",
+        "ingredients": [
+          "80g canned tuna",
+          "1 cup cooked pasta",
+          "Cherry tomatoes",
+          "2 tbsp olive oil",
+          "Basil"
+        ],
+        "steps": [
+          "Mix all together and serve cold."
+        ],
+        "prep_time": "8 min",
+        "cook_time": "10 min",
+        "servings": 2,
+        "tags": ["pescatarian", "meal prep"],
+        "calories": 405
+      },
+      {
+        "name": "Mackerel Pita",
+        "ingredients": [
+          "1 whole wheat pita",
+          "70g smoked mackerel",
+          "Lettuce",
+          "Cucumber slices",
+          "1 tbsp hummus"
+        ],
+        "steps": [
+          "Spread hummus in pita, add veggies and mackerel."
+        ],
+        "prep_time": "5 min",
+        "cook_time": "0 min",
+        "servings": 1,
+        "tags": ["omega-3", "dairy-free"],
+        "calories": 350
+      },
+      {
+        "name": "Shrimp Quinoa Bowl",
+        "ingredients": [
+          "100g shrimp",
+          "1/2 cup quinoa",
+          "Spinach",
+          "1 tbsp olive oil",
+          "Paprika"
+        ],
+        "steps": [
+          "Sauté shrimp with paprika.",
+          "Serve over quinoa and spinach."
+        ],
+        "prep_time": "7 min",
+        "cook_time": "8 min",
+        "servings": 1,
+        "tags": ["pescatarian", "high-protein"],
+        "calories": 320
+      },
+      {
+        "name": "Herbed Tuna Wrap",
+        "ingredients": [
+          "1 whole wheat wrap",
+          "80g tuna",
+          "Lettuce",
+          "1 tbsp yogurt",
+          "Chives"
+        ],
+        "steps": [
+          "Mix tuna with yogurt and chives.",
+          "Add to wrap with lettuce and roll."
+        ],
+        "prep_time": "5 min",
+        "cook_time": "0 min",
+        "servings": 1,
+        "tags": ["protein-rich"],
+        "calories": 270
+      },
+      {
+        "name": "Sardine & Tomato Toast",
+        "ingredients": [
+          "2 slices rye bread",
+          "1 can sardines in olive oil",
+          "Sliced tomato",
+          "Pepper"
+        ],
+        "steps": [
+          "Toast bread, top with sardines and tomato."
+        ],
+        "prep_time": "4 min",
+        "cook_time": "2 min",
+        "servings": 1,
+        "tags": ["pescatarian", "omega-3"],
+        "calories": 330
+      },
+      {
+        "name": "Spicy Fish Rice Bowl",
+        "ingredients": [
+          "White fish filet",
+          "1/2 cup cooked rice",
+          "Carrot, grated",
+          "2 tbsp spicy mayo",
+          "Cucumber"
+        ],
+        "steps": [
+          "Grill fish, slice veggies.",
+          "Assemble all in a bowl, top with mayo."
+        ],
+        "prep_time": "7 min",
+        "cook_time": "7 min",
+        "servings": 1,
+        "tags": ["fusion", "spicy"],
+        "calories": 365
+      },
+      {
+        "name": "Chickpea Tuna Salad",
+        "ingredients": [
+          "60g canned tuna",
+          "1/2 cup chickpeas",
+          "Lettuce",
+          "Red onion",
+          "Lemon juice"
+        ],
+        "steps": [
+          "Mix tuna and chickpeas, dress with lemon.",
+          "Serve on lettuce."
+        ],
+        "prep_time": "5 min",
+        "cook_time": "0 min",
+        "servings": 1,
+        "tags": ["high-protein"],
+        "calories": 280
+      }
+    ],
+    "Veggie": [
+      {
+        "name": "Greek Salad Bowl",
+        "ingredients": [
+          "Cherry tomatoes",
+          "Cucumber",
+          "Red onion",
+          "Kalamata olives",
+          "30g feta cheese"
+        ],
+        "steps": [
+          "Chop all, mix and season with oregano & olive oil."
+        ],
+        "prep_time": "6 min",
+        "cook_time": "0 min",
+        "servings": 1,
+        "tags": ["vegetarian", "Mediterranean"],
+        "calories": 210
+      },
+      {
+        "name": "Falafel Pita",
+        "ingredients": [
+          "2 falafel balls",
+          "1 pita bread",
+          "Lettuce",
+          "Cucumber",
+          "2 tbsp hummus"
+        ],
+        "steps": [
+          "Warm pita, spread hummus, add veggies and falafel."
+        ],
+        "prep_time": "4 min",
+        "cook_time": "2 min",
+        "servings": 1,
+        "tags": ["vegan", "high-fiber"],
+        "calories": 310
+      },
+      {
+        "name": "Caprese Wrap",
+        "ingredients": [
+          "1 wrap",
+          "50g mozzarella",
+          "Tomato slices",
+          "Fresh basil",
+          "Balsamic glaze"
+        ],
+        "steps": [
+          "Add all to wrap, drizzle glaze, roll tightly."
+        ],
+        "prep_time": "5 min",
+        "cook_time": "0 min",
+        "servings": 1,
+        "tags": ["vegetarian", "Italian"],
+        "calories": 335
+      },
+      {
+        "name": "Sweet Potato Black Bean Bowl",
+        "ingredients": [
+          "1/2 sweet potato, cubed & roasted",
+          "1/2 cup black beans",
+          "Corn",
+          "Salsa"
+        ],
+        "steps": [
+          "Roast potato, warm beans, combine, top with salsa."
+        ],
+        "prep_time": "10 min",
+        "cook_time": "20 min",
+        "servings": 1,
+        "tags": ["vegan", "gluten-free"],
+        "calories": 370
+      },
+      {
+        "name": "Spinach Chickpea Curry",
+        "ingredients": [
+          "1/2 cup chickpeas",
+          "1 cup spinach",
+          "1/4 cup coconut milk",
+          "Curry powder"
+        ],
+        "steps": [
+          "Cook chickpeas with spinach & curry, add coconut milk."
+        ],
+        "prep_time": "7 min",
+        "cook_time": "10 min",
+        "servings": 1,
+        "tags": ["vegan", "meal prep"],
+        "calories": 260
+      },
+      {
+        "name": "Avocado Rice Bowl",
+        "ingredients": [
+          "1/2 avocado",
+          "1/2 cup cooked rice",
+          "Edamame",
+          "Carrot, grated",
+          "Soy sauce"
+        ],
+        "steps": [
+          "Arrange all in a bowl, drizzle with soy."
+        ],
+        "prep_time": "5 min",
+        "cook_time": "5 min",
+        "servings": 1,
+        "tags": ["vegan", "Asian-inspired"],
+        "calories": 295
+      },
+      {
+        "name": "Roasted Veggie Sandwich",
+        "ingredients": [
+          "2 slices whole grain bread",
+          "Roasted zucchini",
+          "Roasted bell pepper",
+          "Pesto"
+        ],
+        "steps": [
+          "Layer veggies on bread, spread with pesto."
+        ],
+        "prep_time": "8 min",
+        "cook_time": "10 min",
+        "servings": 1,
+        "tags": ["vegetarian", "lunch"],
+        "calories": 340
+      }
+    ]
+  },
+  "Dinner": {
+    "Poultry": [
+      {
+        "name": "Turkey Chili",
+        "ingredients": [
+          "200g lean turkey mince",
+          "Kidney beans",
+          "Tomato sauce",
+          "Chili powder",
+          "Corn"
+        ],
+        "steps": [
+          "Brown turkey, add beans, corn, sauce, simmer 20 min."
+        ],
+        "prep_time": "10 min",
+        "cook_time": "20 min",
+        "servings": 2,
+        "tags": ["high-protein", "meal prep"],
+        "calories": 405
+      },
+      {
+        "name": "Honey Mustard Chicken",
+        "ingredients": [
+          "2 chicken breasts",
+          "2 tbsp honey",
+          "1 tbsp mustard",
+          "1 tsp olive oil"
+        ],
+        "steps": [
+          "Mix honey and mustard, coat chicken.",
+          "Bake at 180°C for 25 min."
+        ],
+        "prep_time": "5 min",
+        "cook_time": "25 min",
+        "servings": 2,
+        "tags": ["sweet-savory", "gluten-free"],
+        "calories": 385
+      },
+      {
+        "name": "Asian Chicken Lettuce Wraps",
+        "ingredients": [
+          "200g ground chicken",
+          "Soy sauce",
+          "Grated carrot",
+          "Chopped spring onion",
+          "Lettuce leaves"
+        ],
+        "steps": [
+          "Cook chicken with soy, carrot, and onion.",
+          "Spoon into lettuce cups."
+        ],
+        "prep_time": "7 min",
+        "cook_time": "10 min",
+        "servings": 2,
+        "tags": ["low-carb", "Asian-inspired"],
+        "calories": 330
+      },
+      {
+        "name": "Lemon Herb Roast Chicken",
+        "ingredients": [
+          "2 chicken legs",
+          "Lemon",
+          "Rosemary",
+          "Olive oil"
+        ],
+        "steps": [
+          "Rub chicken with lemon, rosemary, oil.",
+          "Roast at 190°C for 40 min."
+        ],
+        "prep_time": "6 min",
+        "cook_time": "40 min",
+        "servings": 2,
+        "tags": ["classic", "comfort food"],
+        "calories": 470
+      },
+      {
+        "name": "Spicy Grilled Chicken Skewers",
+        "ingredients": [
+          "Chicken breast",
+          "Paprika",
+          "Chili powder",
+          "Bell pepper chunks",
+          "Olive oil"
+        ],
+        "steps": [
+          "Marinate chicken & peppers in spices, skewer.",
+          "Grill 10 min, turning halfway."
+        ],
+        "prep_time": "10 min",
+        "cook_time": "10 min",
+        "servings": 2,
+        "tags": ["spicy", "protein-rich"],
+        "calories": 355
+      },
+      {
+        "name": "Chicken Cauliflower Rice Bowl",
+        "ingredients": [
+          "Chicken breast",
+          "Cauliflower rice",
+          "Broccoli",
+          "Soy sauce"
+        ],
+        "steps": [
+          "Cook chicken, steam veggies.",
+          "Serve over cauliflower rice, drizzle soy."
+        ],
+        "prep_time": "8 min",
+        "cook_time": "12 min",
+        "servings": 2,
+        "tags": ["low-carb", "dairy-free"],
+        "calories": 265
+      }
+    ],
+    "Dairy-Free": [
+      {
+        "name": "Lentil & Vegetable Stew",
+        "ingredients": [
+          "1 cup lentils",
+          "Carrot",
+          "Celery",
+          "Potato",
+          "Vegetable broth"
+        ],
+        "steps": [
+          "Simmer lentils and chopped veggies in broth until soft."
+        ],
+        "prep_time": "10 min",
+        "cook_time": "30 min",
+        "servings": 3,
+        "tags": ["vegan", "comfort food"],
+        "calories": 335
+      },
+      {
+        "name": "Eggplant Tomato Pasta",
+        "ingredients": [
+          "1/2 eggplant, cubed",
+          "1 cup cooked pasta",
+          "Tomato sauce",
+          "Garlic",
+          "Olive oil"
+        ],
+        "steps": [
+          "Sauté eggplant in oil.",
+          "Add garlic & tomato sauce, toss with pasta."
+        ],
+        "prep_time": "8 min",
+        "cook_time": "12 min",
+        "servings": 2,
+        "tags": ["vegan", "Italian"],
+        "calories": 355
+      },
+      {
+        "name": "Chickpea & Spinach Curry",
+        "ingredients": [
+          "1 cup chickpeas",
+          "Spinach",
+          "Onion",
+          "Coconut milk",
+          "Curry powder"
+        ],
+        "steps": [
+          "Sauté onion, add chickpeas, curry, coconut milk.",
+          "Add spinach, simmer."
+        ],
+        "prep_time": "7 min",
+        "cook_time": "15 min",
+        "servings": 2,
+        "tags": ["vegan", "high-protein"],
+        "calories": 410
+      },
+      {
+        "name": "Red Lentil Dahl",
+        "ingredients": [
+          "1 cup red lentils",
+          "1 tomato, diced",
+          "Onion",
+          "Garlic",
+          "Curry spices"
+        ],
+        "steps": [
+          "Sauté onion, garlic, add lentils & tomato, simmer with spices."
+        ],
+        "prep_time": "6 min",
+        "cook_time": "20 min",
+        "servings": 2,
+        "tags": ["vegan", "Indian-inspired"],
+        "calories": 370
+      },
+      {
+        "name": "Stuffed Zucchini Boats",
+        "ingredients": [
+          "2 zucchinis",
+          "1/2 cup cooked quinoa",
+          "Tomato sauce",
+          "Black beans"
+        ],
+        "steps": [
+          "Hollow zucchinis, fill with quinoa mix, bake 25 min at 180°C."
+        ],
+        "prep_time": "10 min",
+        "cook_time": "25 min",
+        "servings": 2,
+        "tags": ["vegan", "gluten-free"],
+        "calories": 330
+      },
+      {
+        "name": "Moroccan Vegetable Tagine",
+        "ingredients": [
+          "Carrot",
+          "Zucchini",
+          "Chickpeas",
+          "Raisins",
+          "Spices (cumin, cinnamon)"
+        ],
+        "steps": [
+          "Sauté all in pot, simmer 30 min with a bit of water."
+        ],
+        "prep_time": "9 min",
+        "cook_time": "30 min",
+        "servings": 2,
+        "tags": ["vegan", "fragrant"],
+        "calories": 345
+      },
+      {
+        "name": "Thai Peanut Tofu Stir Fry",
+        "ingredients": [
+          "Firm tofu",
+          "Broccoli",
+          "Bell pepper",
+          "Peanut sauce",
+          "Rice noodles"
+        ],
+        "steps": [
+          "Stir fry tofu and veggies, toss with noodles and peanut sauce."
+        ],
+        "prep_time": "8 min",
+        "cook_time": "12 min",
+        "servings": 2,
+        "tags": ["vegan", "Asian-inspired"],
+        "calories": 430
+      }
+    ]
+  }
+}
