@@ -193,3 +193,56 @@ return {
   "product": $product.name,
   "buyers": $buyers
 }
+
+#########################################################
+People who bought products for more than a total of 100
+#########################################################
+
+let $result :=
+  for $person in $shop.persons[]
+  let $items := 
+    for $basket in $shop.baskets[]
+    where $basket.personid = $person.id
+    return $basket.items
+  let $flatItems := flatten($items)
+  let $values :=
+    for $item in $flatItems
+    let $product := head(
+      for $p in $shop.products[]
+      where $p.id = $item.productid
+      return $p
+    )
+    let $unit := $product.price
+    let $qty := $item.quantity
+    let $total := $unit * $qty
+    where $total > 100
+    return concat(
+      $product.name,
+      " (unit-price=", $unit,
+      ", qty=", $qty,
+      ")"
+    )
+  let $sumTotal :=
+    sum(
+      for $item in $flatItems
+      let $product := head(
+        for $p in $shop.products[]
+        where $p.id = $item.productid
+        return $p
+      )
+      let $unit := $product.price
+      let $qty := $item.quantity
+      let $total := $unit * $qty
+      where $total > 100
+      return $total
+    )
+  where exists($values)
+  return concat(
+    $person.name,
+    " (id=", $person.id, ") heeft gekocht: ",
+    string-join($values, ", "),
+    " - totaal uitgegeven = ", $sumTotal
+  )
+
+return string-join($result, "
+")
