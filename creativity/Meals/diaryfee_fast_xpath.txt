@@ -1,0 +1,1 @@
+//Recipe[Tags/Tag='dairy-free' and number(substring-before(PrepTime, ' ')) + number(substring-before(CookTime, ' ')) < 30] 

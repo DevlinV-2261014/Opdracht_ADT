@@ -1,0 +1,28 @@
+# Geef een recept dat voorkomt als ingredient in een ander recept
+
+for $recipe in //Recipe
+where some $other in //Recipe
+      satisfies some $ing in $other/Ingredients/Ingredient
+                  satisfies normalize-space($ing) = $recipe/Name
+return $recipe/Name
+
+
+# meer info
+
+for $recipe in //Recipe
+let $users :=
+  for $other in //Recipe
+  where some $ing in $other/Ingredients/Ingredient
+        satisfies normalize-space($ing) = $recipe/Name
+  return $other/Name
+where exists($users)
+return
+  <RecipeUsedAsIngredient>
+    <Name>{ $recipe/Name }</Name>
+    <UsedIn>
+      { for $n in $users return <RecipeName>{ $n }</RecipeName> }
+    </UsedIn>
+  </RecipeUsedAsIngredient>
+
+
+# Gaat niet met xpath omdat je niet kan loopen over ingrediënten in xpath

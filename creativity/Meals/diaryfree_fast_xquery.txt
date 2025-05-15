@@ -1,0 +1,20 @@
+for $r in //Recipe[Tags/Tag='dairy-free']
+let $prep := number(substring-before($r/PrepTime, ' '))
+let $cook := number(substring-before($r/CookTime, ' '))
+let $total := $prep + $cook
+where $total lt 30
+return
+  <Recipe>
+    <Name>{ $r/Name/text() }</Name>
+    <TotalMinutes>{ $total }</TotalMinutes>
+    <Ingredients>
+      { for $i in $r/Ingredients/Ingredient return <Ingredient>{ $i/text() }</Ingredient> }
+    </Ingredients>
+    <Steps>
+      { for $s in $r/Steps/Step return <Step>{ $s/text() }</Step> }
+    </Steps>
+    <Tags>
+      { for $t in $r/Tags/Tag return <Tag>{ $t/text() }</Tag> }
+    </Tags>
+    <Calories>{ $r/Calories/text() }</Calories>
+  </Recipe>

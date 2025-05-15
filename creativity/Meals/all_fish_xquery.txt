@@ -1,0 +1,24 @@
+for $r in //Fish/Recipe
+return
+  <Recipe>
+    <Name>{ $r/Name/text() }</Name>
+    <Ingredients>
+      { for $i in $r/Ingredients/Ingredient return <Ingredient>{ $i/text() }</Ingredient> }
+    </Ingredients>
+    <Steps>
+      { for $s in $r/Steps/Step return <Step>{ $s/text() }</Step> }
+    </Steps>
+    <PrepTime>{ $r/PrepTime/text() }</PrepTime>
+    <CookTime>{ $r/CookTime/text() }</CookTime>
+    <Servings>{ $r/Servings/text() }</Servings>
+    <Tags>
+      { for $t in $r/Tags/Tag return <Tag>{ $t/text() }</Tag> }
+    </Tags>
+    <Calories>{ $r/Calories/text() }</Calories>
+  </Recipe>
+
+
+# alleen namen ophalen
+
+for $r in //Fish/Recipe
+return $r/Name

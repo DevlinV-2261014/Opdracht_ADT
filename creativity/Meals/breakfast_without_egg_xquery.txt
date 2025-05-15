@@ -1,0 +1,11 @@
+for $r in //Breakfast//Recipe
+where not($r/Ingredients/Ingredient[contains(., 'egg')])
+return $r
+
+
+
+# Alleen de naam er uit krijgen
+
+for $r in //Breakfast//Recipe
+where not($r/Ingredients/Ingredient[contains(., 'egg')])
+return $r/Name
