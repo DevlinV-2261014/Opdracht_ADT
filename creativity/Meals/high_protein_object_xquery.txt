@@ -1,0 +1,33 @@
+for $r in //Recipe[Tags/Tag='high-protein']
+return
+  <Recipe>
+    <Name>{ $r/Name/text() }</Name>
+    <Category>{
+      if ($r/ancestor::Egg) then "Egg"
+      else if ($r/ancestor::Veggie) then "Veggie"
+      else if ($r/ancestor::Fish) then "Fish"
+      else "Unknown"
+    }</Category>
+    <Ingredients>
+      {
+        for $i in $r/Ingredients/Ingredient
+        return <Ingredient>{ $i/text() }</Ingredient>
+      }
+    </Ingredients>
+    <Steps>
+      {
+        for $s in $r/Steps/Step
+        return <Step>{ $s/text() }</Step>
+      }
+    </Steps>
+    <PrepTime>{ $r/PrepTime/text() }</PrepTime>
+    <CookTime>{ $r/CookTime/text() }</CookTime>
+    <Servings>{ $r/Servings/text() }</Servings>
+    <Tags>
+      {
+        for $t in $r/Tags/Tag
+        return <Tag>{ $t/text() }</Tag>
+      }
+    </Tags>
+    <Calories>{ $r/Calories/text() }</Calories>
+  </Recipe>

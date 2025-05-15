@@ -1,0 +1,184 @@
+<Meals>
+    <Breakfast>
+        <Egg>
+            <Recipe>
+                <Name>Spinach Feta Scramble</Name>
+                <Ingredients>
+                    <Ingredient>2 eggs</Ingredient>
+                    <Ingredient>1/2 cup spinach</Ingredient>
+                    <Ingredient>30g feta cheese</Ingredient>
+                    <Ingredient>1 tsp olive oil</Ingredient>
+                    <Ingredient>Salt, pepper</Ingredient>
+                </Ingredients>
+                <Steps>
+                    <Step>Heat oil, wilt spinach.</Step>
+                    <Step>Add eggs and feta, scramble gently, season.</Step>
+                </Steps>
+                <PrepTime>4 min</PrepTime>
+                <CookTime>5 min</CookTime>
+                <Servings>1</Servings>
+                <Tags>
+                    <Tag>vegetarian</Tag>
+                    <Tag>high-protein</Tag>
+                </Tags>
+                <Calories>270</Calories>
+            </Recipe>
+            <Recipe>
+                <Name>Egg Muffins</Name>
+                <Ingredients>
+                    <Ingredient>3 eggs</Ingredient>
+                    <Ingredient>1/4 cup diced tomato</Ingredient>
+                    <Ingredient>2 tbsp chopped onion</Ingredient>
+                    <Ingredient>30g grated cheese</Ingredient>
+                    <Ingredient>Salt, pepper</Ingredient>
+                </Ingredients>
+                <Steps>
+                    <Step>Beat eggs, mix in veggies and cheese.</Step>
+                    <Step>Pour in muffin tray, bake 15 min at 180°C.</Step>
+                </Steps>
+                <PrepTime>6 min</PrepTime>
+                <CookTime>15 min</CookTime>
+                <Servings>2</Servings>
+                <Tags>
+                    <Tag>meal prep</Tag>
+                    <Tag>vegetarian</Tag>
+                </Tags>
+                <Calories>320</Calories>
+            </Recipe>
+        </Egg>
+        <Veggie>
+            <Recipe>
+                <Name>Peanut Butter Banana Toast</Name>
+                <Ingredients>
+                    <Ingredient>1 slice whole grain bread</Ingredient>
+                    <Ingredient>1 tbsp peanut butter</Ingredient>
+                    <Ingredient>1/2 banana</Ingredient>
+                </Ingredients>
+                <Steps>
+                    <Step>Toast bread.</Step>
+                    <Step>Spread peanut butter, add banana slices.</Step>
+                </Steps>
+                <PrepTime>3 min</PrepTime>
+                <CookTime>2 min</CookTime>
+                <Servings>1</Servings>
+                <Tags>
+                    <Tag>vegan</Tag>
+                    <Tag>dairy-free</Tag>
+                </Tags>
+                <Calories>290</Calories>
+            </Recipe>
+            <Recipe>
+                <Name>Mushroom Spinach Breakfast Bowl</Name>
+                <Ingredients>
+                    <Ingredient>1/2 cup cooked quinoa</Ingredient>
+                    <Ingredient>1/2 cup sautéed mushrooms</Ingredient>
+                    <Ingredient>1/2 cup spinach</Ingredient>
+                    <Ingredient>1 tbsp olive oil</Ingredient>
+                </Ingredients>
+                <Steps>
+                    <Step>Cook mushrooms and spinach in oil.</Step>
+                    <Step>Serve over warm quinoa.</Step>
+                </Steps>
+                <PrepTime>6 min</PrepTime>
+                <CookTime>7 min</CookTime>
+                <Servings>1</Servings>
+                <Tags>
+                    <Tag>vegan</Tag>
+                    <Tag>gluten-free</Tag>
+                </Tags>
+                <Calories>320</Calories>
+            </Recipe>
+        </Veggie>
+        
+    </Breakfast>
+    <Lunch>
+        <Veggie>
+            <Recipe>
+                <Name>Greek Salad Bowl</Name>
+                <Ingredients>
+                    <Ingredient>Cherry tomatoes</Ingredient>
+                    <Ingredient>Cucumber</Ingredient>
+                    <Ingredient>Red onion</Ingredient>
+                    <Ingredient>Kalamata olives</Ingredient>
+                    <Ingredient>30g feta cheese</Ingredient>
+                </Ingredients>
+                <Steps>
+                    <Step>Chop all, mix and season with oregano &amp; olive oil.</Step>
+                </Steps>
+                <PrepTime>6 min</PrepTime>
+                <CookTime>0 min</CookTime>
+                <Servings>1</Servings>
+                <Tags>
+                    <Tag>vegetarian</Tag>
+                    <Tag>Mediterranean</Tag>
+                </Tags>
+                <Calories>210</Calories>
+            </Recipe>
+            <Recipe>
+                <Name>Falafel Pita</Name>
+                <Ingredients>
+                    <Ingredient>2 falafel balls</Ingredient>
+                    <Ingredient>1 pita bread</Ingredient>
+                    <Ingredient>Lettuce</Ingredient>
+                    <Ingredient>Cucumber</Ingredient>
+                    <Ingredient>2 tbsp hummus</Ingredient>
+                </Ingredients>
+                <Steps>
+                    <Step>Warm pita, spread hummus, add veggies and falafel.</Step>
+                </Steps>
+                <PrepTime>4 min</PrepTime>
+                <CookTime>2 min</CookTime>
+                <Servings>1</Servings>
+                <Tags>
+                    <Tag>vegan</Tag>
+                    <Tag>high-fiber</Tag>
+                </Tags>
+                <Calories>310</Calories>
+            </Recipe>
+        </Veggie>
+        <Fish>
+            <Recipe>
+                <Name>Tuna Pasta Salad</Name>
+                <Ingredients>
+                    <Ingredient>80g canned tuna</Ingredient>
+                    <Ingredient>1 cup cooked pasta</Ingredient>
+                    <Ingredient>Cherry tomatoes</Ingredient>
+                    <Ingredient>2 tbsp olive oil</Ingredient>
+                    <Ingredient>Basil</Ingredient>
+                </Ingredients>
+                <Steps>
+                    <Step>Mix all together and serve cold.</Step>
+                </Steps>
+                <PrepTime>8 min</PrepTime>
+                <CookTime>10 min</CookTime>
+                <Servings>2</Servings>
+                <Tags>
+                    <Tag>pescatarian</Tag>
+                    <Tag>meal prep</Tag>
+                </Tags>
+                <Calories>405</Calories>
+            </Recipe>
+            <Recipe>
+                <Name>Mackerel Pita</Name>
+                <Ingredients>
+                    <Ingredient>1 whole wheat pita</Ingredient>
+                    <Ingredient>70g smoked mackerel</Ingredient>
+                    <Ingredient>Lettuce</Ingredient>
+                    <Ingredient>Cucumber slices</Ingredient>
+                    <Ingredient>Tuna Pasta Salad</Ingredient>
+                </Ingredients>
+                <Steps>
+                    <Step>Spread hummus in pita, add veggies and mackerel.</Step>
+                </Steps>
+                <PrepTime>5 min</PrepTime>
+                <CookTime>0 min</CookTime>
+                <Servings>1</Servings>
+                <Tags>
+                    <Tag>omega-3</Tag>
+                    <Tag>dairy-free</Tag>
+                </Tags>
+                <Calories>350</Calories>
+            </Recipe>
+        </Fish>
+    </Lunch>
+</Meals>
