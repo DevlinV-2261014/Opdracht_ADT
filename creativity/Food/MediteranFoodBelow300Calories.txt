@@ -1,0 +1,6 @@
+BASE XPath:
+ //Recipe[Tags/Tag='Mediterranean' and Calories < 300]
+
+BASE XQuery:
+for $recipe in //Recipe[Tags/Tag='Mediterranean' and Calories < 300]
+return $recipe
