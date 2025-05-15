@@ -1,3 +1,4 @@
+STEP ONE:
 /shop/persons/person[
     id = /shop/baskets/basket[
         items/item/productid = 104
@@ -5,3 +6,14 @@
         items/item/productid = 105
     ]/personid
 ]/name
+
+STEP TWO:
+concat(
+/shop/persons/person[
+    id = /shop/baskets/basket[
+        items/item/productid = 104
+    ][
+        items/item/productid = 105
+    ]/personid
+]/name, " heeft ", /shop/products/product[id = 104]/name, ' en ', /shop/products/product[id=105]/name, ' gekocht'
+)

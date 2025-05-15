@@ -1,0 +1,26 @@
+BASE XPath:
+//Breakfast//Recipe[Calories < 300] 
+
+BASE XQuery:
+for $element in //Breakfast//Recipe[Calories < 300]
+return $element
+
+
+ONLY GET NAMES XPath:
+//Breakfast//Recipe[Calories < 300]/Name
+
+ONLY GET NAMES XQUERY:
+for $name in //Breakfast//Recipe[Calories < 300]/Name
+return $name
+
+
+Text XQuery:
+concat(
+  ' koopt: ',
+  string-join(
+    for $p in //Breakfast//Recipe[Calories < 300] 
+    return concat( $p/Name, " 
+    "
+        )
+    )
+)

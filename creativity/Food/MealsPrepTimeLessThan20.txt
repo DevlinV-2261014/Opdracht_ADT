@@ -1,0 +1,16 @@
+BASE XPath:
+//Recipe[number(substring-before(PrepTime, ' ')) + number(substring-before(CookTime, ' ')) < 20]
+
+BASE XQuery:
+for $recipe in //Recipe[number(substring-before(PrepTime, ' ')) + number(substring-before(CookTime, ' ')) < 20]
+return $recipe
+
+NAME XPath:
+//Recipe[number(substring-before(PrepTime, ' ')) + number(substring-before(CookTime, ' ')) < 20]/Name
+
+NAME XQuery:
+for $name in //Recipe[number(substring-before(PrepTime, ' ')) + number(substring-before(CookTime, ' ')) < 20]/Name
+return $name
+
+for $recipe in //Recipe[number(substring-before(PrepTime, ' ')) + number(substring-before(CookTime, ' ')) < 20]
+return $recipe/Name

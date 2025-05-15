@@ -1,0 +1,58 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <xs:element name="Meals">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Breakfast" type="MealCategory"/>
+                <xs:element name="Lunch" type="MealCategory"/>
+                <!-- <xs:element name="Dinner" type="MealCategory" minOccurs="0"/> -->
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="MealCategory">
+        <xs:sequence>
+            <xs:element name="Egg" type="RecipeList" minOccurs="0"/>
+            <xs:element name="Veggie" type="RecipeList" minOccurs="0"/>
+            <xs:element name="Fish" type="RecipeList" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="RecipeList">
+        <xs:sequence>
+            <xs:element name="Recipe" type="RecipeType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="RecipeType">
+        <xs:sequence>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="Ingredients">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Ingredient" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Steps">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Step" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="PrepTime" type="xs:string"/>
+            <xs:element name="CookTime" type="xs:string"/>
+            <xs:element name="Servings" type="xs:integer"/>
+            <xs:element name="Tags">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Tag" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Calories" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+</xs:schema> 
