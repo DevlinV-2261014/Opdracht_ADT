@@ -8,6 +8,7 @@ declare function local:resolve($id as xs:string) as xs:string? {
     else ()
 };
 
+<baskets> {
 for $basket in doc("shop.xml")//baskets/basket
 return
   <basket>
@@ -21,3 +22,5 @@ return
         </item>
     }
   </basket>
+  }
+  </baskets>
